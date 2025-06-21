@@ -1,0 +1,94 @@
+# 🎯 FIFA Player Clustering & Performance Analysis
+
+Projet combinant **Data Science** (clustering K-Means + PCA) et **visualisation** (Power BI) pour explorer et analyser les performances des joueurs de football issus des données FIFA.
+
+---
+
+## 📌 Objectifs du projet
+
+- 🔍 Analyser les statistiques de joueurs FIFA (pace, shooting, etc.)
+- 🧠 Regrouper automatiquement les joueurs par **profils de jeu** avec K-Means
+- 📊 Créer un **dashboard Power BI interactif** pour explorer les clusters
+- 🚀 Proposer un projet complet en Python + BI à intégrer dans un portfolio
+
+---
+
+## 🗂 Structure du projet
+
+```
+fifa-player-clustering-powerbi/
+│
+├── README.md                  ← Présentation complète du projet
+├── data/
+│   └── players_with_profiles.csv      # Données enrichies avec cluster et profil
+├── notebooks/
+│   └── clustering_analysis.ipynb      # Notebook Python : nettoyage, PCA, KMeans
+├── powerbi/
+│   └── fifa_dashboard.pbix            # Fichier Power BI avec visuels
+├── img/
+│   └── dashboard_preview.png          # Capture du dashboard
+```
+
+---
+
+## 🧪 Méthodologie
+
+### 🧼 1. Préparation des données
+- Chargement d’un fichier FIFA (50 000 joueurs)
+- Sélection des variables clés : `pace`, `shooting`, `passing`, etc.
+- Normalisation des features avec `StandardScaler`
+
+### 🔍 2. Clustering
+- Application de l’algorithme **K-Means (n=4)**
+- Ajout d’un champ `profil` basé sur les moyennes observées par cluster
+- Réduction de dimension avec **PCA** pour visualiser les groupes
+
+### 📈 3. Visualisation Power BI
+- Carte des nationalités
+- Histogramme des profils
+- Moyenne des compétences par cluster
+- Tableau interactif : top joueurs par profil, âge moyen, filtres dynamiques
+
+---
+
+## 🛠 Technologies utilisées
+
+| Technologie     | Usage                                      |
+|----------------|---------------------------------------------|
+| Python          | Préparation de données, clustering         |
+| pandas, scikit-learn | Nettoyage, StandardScaler, KMeans, PCA  |
+| matplotlib      | Visualisation intermédiaire                |
+| Power BI        | Dashboard interactif final                 |
+| Git & GitHub    | Versioning, documentation                  |
+
+---
+
+## 📸 Aperçu du Dashboard
+
+![Aperçu Power BI](img/dashboard_preview.png)
+
+---
+
+## 👤 Auteur
+
+Projet réalisé par **Brahim Meraghni**  
+📧 br.meraghni@gmail.com  
+💼 [LinkedIn](https://www.linkedin.com/in/brahim-meraghni-248878173/)  
+🐙 [GitHub](https://github.com/Bahimer)
+
+---
+
+## 📢 Utilisation
+
+1. Cloner le dépôt :
+   ```bash
+   git clone https://github.com/Bahimer/fifa-player-clustering-powerbi.git
+   ```
+2. Lancer le notebook dans Jupyter ou VS Code
+3. Ouvrir `fifa_dashboard.pbix` avec Power BI Desktop
+
+---
+
+## 📄 Licence
+
+Ce projet est sous licence MIT — libre d’utilisation et de modification.
